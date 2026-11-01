@@ -8,7 +8,7 @@ ImGui のデバッグ画面で確認できます。
 
 ## はじめに
 
-1. [必要環境](#必要環境)を準備し、[ビルド](#ビルドと-visual-studio-ソリューション)します。
+1. [必要環境](#必要環境)を準備し、[同梱の実行ファイル](#同梱の実行ファイル)を使うか、[ビルド](#ビルドと-visual-studio-ソリューション)します。
 2. `solutions\model\stage` に静的 FBX ファイルを置き、アプリケーションを起動します。
 3. **Stage** ウィンドウの **Refresh** を押し、**Model** からステージを選択します。
 4. **デバッグ機能** で「地形ボクセル+安全距離確認」を有効にし、
@@ -20,14 +20,27 @@ ImGui のデバッグ画面で確認できます。
 ## 必要環境
 
 - Windows 10 / 11 (x64)
-- Visual Studio 2026 または 2022
+- ビルド時は Visual Studio 2026 または 2022
   - 「C++ によるデスクトップ開発」
   - MSVC x64/x86 ビルドツール、Windows SDK
   - 「Windows 用 C++ CMake ツール」
-- CMake 3.25 以上（VS 2026 のソリューション生成には 4.2 以上）
+- ビルド時は CMake 3.25 以上（VS 2026 のソリューション生成には 4.2 以上）
 - OpenGL 4.3 以上に対応する GPU とメーカー製ドライバー
 - 初回構成時のインターネット接続（依存ライブラリ取得用）
 - Git（Visual Studio 同梱版でも可）、GitHub アカウント（公開時のみ）
+
+## 同梱の実行ファイル
+
+ビルド済みの [navmesh_demo.exe](exe/navmesh_demo.exe) を同梱しています。
+PowerShell ではプロジェクトのルートから次のように起動できます。
+
+```powershell
+.\exe\navmesh_demo.exe
+```
+
+この実行ファイルのステージ検索先は、ビルド時の
+`D:\navmesh_demo\solutions\model\stage` に固定されています。別の場所で利用する場合は、
+[ビルド](#ビルドと-visual-studio-ソリューション)し直してください。
 
 ## ビルドと Visual Studio ソリューション
 
