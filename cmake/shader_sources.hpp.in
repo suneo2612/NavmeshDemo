@@ -1,0 +1,10 @@
+#pragma once
+
+namespace shaders {
+inline constexpr char modelVertex[] = R"glsl(@MODEL_VERTEX_SOURCE@)glsl";
+inline constexpr char modelFragment[] = R"glsl(@MODEL_FRAGMENT_SOURCE@)glsl";
+inline constexpr char navmeshBoundsVertex[] = R"glsl(@NAVMESH_BOUNDS_VERTEX_SOURCE@)glsl";
+inline constexpr char navmeshBoundsFragment[] = R"glsl(@NAVMESH_BOUNDS_FRAGMENT_SOURCE@)glsl";
+inline constexpr char navmeshVoxelVertex[] = R"glsl(@NAVMESH_VOXEL_VERTEX_SOURCE@)glsl";
+inline constexpr char navmeshVoxelFragment[] = R"glsl(@NAVMESH_VOXEL_FRAGMENT_SOURCE@)glsl";
+}

@@ -1,0 +1,11 @@
+/out/
+/solutions/vs2026/
+/solutions/vs2022/
+!/solutions/src/
+/.vs/
+/.vscode/
+/build/
+/CMakeUserPresets.json
+/imgui.ini
+*.user
+*.suo
